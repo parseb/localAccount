@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "delegatable-sol/Delegatable.sol";
 
-contract LocalAccount {
+contract LocalAccount is Delegatable {
     
     mapping(address => uint256) nonce;
     address server;
